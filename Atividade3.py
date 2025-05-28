@@ -17,19 +17,24 @@ while True:
             print("Valor inválido. Informe um número inteiro.")
             continue
     if valor == "":
-            print("Valor inválido. Informe um número inteiro.")
+            print("Valor inválido. Você não informou um valor.")
             continue
     if valor == "0":
-            print("Valor inválido. Informe um número inteiro.")
+            print("Valor inválido. Informe um número maior que zero.")
             continue
     
     valor = int(valor)
 
     if valor > saldo:
-            print("=======================================================")
-            print("Valor maior que o saldo disponível.")
-            print("=======================================================")
-            continue
+                print("=======================================================")
+                print(f"Valor maior que o saldo disponível. Saldo Disponivel de R$ {saldo}")
+                print("=======================================================")
+                continue
+    if valor < 2: 
+                print("=======================================================")
+                print("Valor mínimo de R$ 2,00")
+                print("=======================================================")
+                continue
     
     print(f"\nValor a ser sacado: {valor} reais")
     print("=======================================================")
@@ -38,13 +43,14 @@ while True:
 
         quantidade = valor // nota
         if quantidade > 0:
-            print(f"Notas para o saque: {quantidade} de R${nota},00")
+            print(f"Notas para o saque: {quantidade} notas de R${nota},00")
             valor = valor % nota
-            saldo -= quantidade * nota
-        
+            saldo -= quantidade * nota        
             break
 
+    print("\nRetire seu dinheiro.")
     print(f"Novo Saldo Disponível: R${saldo},00")
+    print("Obrigado por utilizar o nosso caixa eletrônico. Volte Sempre!")
     print("=======================================================")
 
 
