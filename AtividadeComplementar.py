@@ -55,7 +55,7 @@ for pacote in pacotes:
         print("\nOBRIGADO POR SUA DOAÇÃO!")
 
 
-# CONFIRMAR COMO MOSTRAR TODOS OS RESULTADOS.
+# METODO NÃO TÃO EFICIENTE 'continue' melhor apenas repetir outro while dentro do while principal
 
         
 
