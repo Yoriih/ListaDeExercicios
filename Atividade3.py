@@ -53,4 +53,5 @@ while True:
     print("Obrigado por utilizar o nosso caixa eletrônico. Volte Sempre!")
     print("=======================================================")
 
+# METODO NÃO TÃO EFICIENTE 'continue' melhor apenas repetir outro while dentro do while principal
 
