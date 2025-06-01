@@ -80,10 +80,4 @@ for cidade, populacao in cadastros:
     break
 
       
-# A cada novo cadastro, o sistema deve validar se a população inserida é um número válido 
-# (não deve aceitar letras ou caracteres especiais).
-# O cadastro deve continuar até o usuário decidir parar, respondendo "S" (sim) ou "N" (não) à pergunta: "Deseja continuar?"
-# Ao final do programa, exiba:
-# O total de cidades cadastradas.
-# A média da população entre todas as cidades.
-# O nome da cidade mais populosa e sua respectiva população.
+# METODO NÃO TÃO EFICIENTE 'continue' melhor apenas repetir outro while dentro do while principal
