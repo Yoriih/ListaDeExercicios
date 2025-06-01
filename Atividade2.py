@@ -73,3 +73,4 @@ for nome, quantidade in listas:
 
 print("\nPossuindo um total de", len(listas), "itens.")
 
+# METODO NÃO TÃO EFICIENTE 'continue' melhor apenas repetir outro while dentro do while principal
