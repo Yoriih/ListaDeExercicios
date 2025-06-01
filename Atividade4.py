@@ -76,6 +76,6 @@ print(f"\nMédia de idade: {media:.2f} anos")
 maisvelho = max(cadastros, key=lambda x: x[1]) 
 print(f"\nPessoa mais velha: {maisvelho[0]} ({maisvelho[1]} anos)") 
 
-
+# METODO NÃO TÃO EFICIENTE 'continue' melhor apenas repetir outro while dentro do while principal
     
    
