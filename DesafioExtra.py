@@ -39,23 +39,38 @@ while True:
     produtos.append((nome, estoque))
 
     # PERGUNTAR SE DESEJA CONTINUAR O CADASTRO
+    # PERGUNTAR SE DESEJA CONTINUAR O CADASTRO
     while True:
         pergunta = input("VOCÊ DESEJA CONTINUAR O CADASTRO DOS PRODUTOS? (S/N)").strip().upper()
         print("=======================================================")
 
-        if pergunta == "S" or "sim":
+        if pergunta == "NÃO":
+            break       
+        elif pergunta == "NAO":            
+            break    
+        elif pergunta == "S":
             break
-        
-        elif pergunta == "N" or "não":
-            print("ENCERRANDO CADASTROS...")
+        elif pergunta == "SIM":
             break
-        
-        else:
-            print("RESPOSTA INVÁLIDA. DIGITE 'Sim' OU 'Não'.")
-            print("=======================================================")
-
-    if pergunta == "N" or "não":
-        break
+        elif pergunta.isdigit():
+            print("INFORME SIM OU NÃO!")
+            print("=========================================")
+        elif pergunta == "":
+            print("INFORME SIM OU NÃO!")
+            print("=========================================")
+        elif not pergunta.isalpha():
+            print("INFORME SIM OU NÃO!")
+            print("=========================================")
+            
+    # Quando sair do loop, encerra tudo.    
+    if pergunta == "NÃO":
+        print("ENCERRANDO SISTEMA DE CADASTRO...")
+        print("=========================================")
+        break       
+    elif pergunta == "NAO":
+        print("ENCERRANDO SISTEMA DE CADASTRO...")
+        print("=========================================")
+        break          
         
 
 
